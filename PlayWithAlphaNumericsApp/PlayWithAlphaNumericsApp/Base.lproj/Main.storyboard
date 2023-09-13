@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KsF-jb-L5S" userLabel="BigContainerSV">
                                 <rect key="frame" x="20" y="79" width="353" height="719"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play WIth AlphaNumeric™️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-hD-qwf" userLabel="headerLBL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-hD-qwf" userLabel="headerLBL">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="72"/>
                                         <color key="backgroundColor" red="0.0" green="0.40392156862745099" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
@@ -173,7 +173,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VgV-dA-GQX" userLabel="MessageTV">
                                         <rect key="frame" x="0.0" y="438.66666666666657" width="353" height="236.33333333333331"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3ne-M0-EmP">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3ne-M0-EmP">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="236.33333333333334"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -231,10 +231,16 @@
                     <connections>
                         <outlet property="firstNumLBL" destination="NbG-tk-TsF" id="qa7-ff-Kr6"/>
                         <outlet property="firstStrTF" destination="0fZ-uc-i7X" id="0Hf-NN-Gxh"/>
+                        <outlet property="firststepperbtn" destination="XKX-Tz-JOn" id="XQd-67-KRa"/>
+                        <outlet property="generatebtn" destination="qEJ-fT-C9r" id="Wek-k6-XIB"/>
                         <outlet property="headerLBL" destination="sBq-hD-qwf" id="7Su-Jg-slw"/>
+                        <outlet property="manipulatebtn" destination="peb-0u-pXa" id="EeH-8x-nse"/>
                         <outlet property="messageTV" destination="3ne-M0-EmP" id="5R5-X8-i0x"/>
+                        <outlet property="numberswchbtn" destination="fKc-5P-Nv0" id="AeM-MG-AZt"/>
                         <outlet property="secondNumLBL" destination="LcF-CN-CqS" id="bOs-gK-jq3"/>
                         <outlet property="secondStrTF" destination="Ho5-jG-4rO" id="wer-ul-vAI"/>
+                        <outlet property="secondstepperbtn" destination="Ebc-M1-5Xm" id="Zqb-L2-YYj"/>
+                        <outlet property="stringswchbtn" destination="CVH-xj-kps" id="XJa-7b-SEg"/>
                         <outletCollection property="optionsSWCH" destination="fKc-5P-Nv0" collectionClass="NSMutableArray" id="Jha-zI-z8S"/>
                         <outletCollection property="optionsSWCH" destination="CVH-xj-kps" collectionClass="NSMutableArray" id="Lvo-KB-3QW"/>
                         <outletCollection property="numberStepper" destination="XKX-Tz-JOn" collectionClass="NSMutableArray" id="fDm-pD-wU4"/>
