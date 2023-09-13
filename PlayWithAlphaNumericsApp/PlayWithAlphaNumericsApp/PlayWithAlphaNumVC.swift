@@ -73,25 +73,25 @@ class PlayWithAlphaNumVC: UIViewController {
             for num in (1...rows){
             for cols in (1...colum){
             if( num==1 || num==rows){
-                messageTV.text+=String("❄️ ")
+                messageTV.text += String("❄️ ")
             }
             else if (cols==1 || cols==colum){
-                messageTV.text+=String("❄️ ")
+                messageTV.text += String("❄️ ")
             }
             else{
                 if(num==cols){
-                messageTV.text+=String("🎅 ")
+                messageTV.text += String("🎅 ")
                 }
                 else if((num+cols)%2==0){
-                messageTV.text+=String("🎅 ")
+                messageTV.text += String("🎅 ")
                 }
                 else{
-                messageTV.text+=String("🌲 ")
+                messageTV.text += String("🌲 ")
                 }
                             
         }
     }
-            messageTV.text+="\n"
+            messageTV.text += "\n"
                     }
                     
                 }
@@ -188,7 +188,6 @@ class PlayWithAlphaNumVC: UIViewController {
         firstStrTF.isEnabled = false
         secondStrTF.isEnabled = false
         stringAndPatternBTN.forEach { $0.isEnabled = false }
-        
     }
     
     
@@ -201,7 +200,8 @@ class PlayWithAlphaNumVC: UIViewController {
         self.headerLBL.text = String(format: "%@\nPlay with AlphaNumerics™","\u{0c38}\u{0c4d}\u{0c35}\u{0c3e}\u{0c17}\u{0c24}\u{0c02}")
         disableUIElements()
         messageTV.text = ""
-        
+        numberswchbtn.isOn = false
+        stringswchbtn.isOn = false
                 // Do any additional setup after loading the view.
     }
     
