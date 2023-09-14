@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DDADC8F3-233A-41AB-8698-94356387E44C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1C1E212-3A56-4991-85B9-170A81671A7B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayWithAlphaNumericsApp/PlayWithAlphaNumVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "PlayWithAlphaNumVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A1C1E212-3A56-4991-85B9-170A81671A7B - 3681d80fa368c259"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlayWithAlphaNumericsApp.PlayWithAlphaNumVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PlayWithAlphaNumericsApp.PlayWithAlphaNumVC"
+                  moduleName = "PlayWithAlphaNumericsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sailaxmiveldanda/Documents/IOS/PlayWithAlphaNumericsApp/PlayWithAlphaNumericsApp/PlayWithAlphaNumVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "565">
+               </Location>
+               <Location
+                  uuid = "A1C1E212-3A56-4991-85B9-170A81671A7B - 5f906967d9e79af2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlayWithAlphaNumericsApp.PlayWithAlphaNumVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PlayWithAlphaNumericsApp.PlayWithAlphaNumVC&gt;"
+                  moduleName = "PlayWithAlphaNumericsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sailaxmiveldanda/Documents/IOS/PlayWithAlphaNumericsApp/PlayWithAlphaNumericsApp/PlayWithAlphaNumVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "522">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
