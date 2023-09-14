@@ -73,7 +73,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="wMW-iP-sX4" secondAttribute="width" multiplier="1.33333" id="YAe-3A-iIz"/>
+                                            <constraint firstItem="wMW-iP-sX4" firstAttribute="width" secondItem="kKo-wz-LAI" secondAttribute="width" multiplier="0.75" id="YAe-3A-iIz"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-5R-Olv" userLabel="FirstNumSV">
