@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExamPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-hQ-5B3" userLabel="BigContainer">
+                                <rect key="frame" x="20" y="59" width="353" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Your Flight™️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZQ-d1-26k">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="76"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane 1" translatesAutoresizingMaskIntoConstraints="NO" id="Qkn-mm-FoV">
+                                        <rect key="frame" x="0.0" y="83.999999999999986" width="353" height="227.66666666666663"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GJK-65-PGa" userLabel="InputSV">
+                                        <rect key="frame" x="0.0" y="319.66666666666663" width="353" height="303.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1ny-9h-q0A" userLabel="WaySV">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-eK-qYC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="44"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="One-Way"/>
+                                                        <connections>
+                                                            <action selector="oneWayTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2g4-fJ-ktd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY0-QN-bph">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="44"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Round Trip"/>
+                                                        <connections>
+                                                            <action selector="roundTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1c-d9-CAP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Customer Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O97-A3-3aj">
+                                                <rect key="frame" x="0.0" y="52" width="353" height="43.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-dJ-cPQ" userLabel="TripSV">
+                                                <rect key="frame" x="0.0" y="103.66666666666663" width="353" height="44"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMF-Xv-eIr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyJ-Qp-NTP">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hbf-Wm-1zu" userLabel="DateSV">
+                                                <rect key="frame" x="0.0" y="155.66666666666669" width="353" height="44"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm/dd/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-Gz-zEF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm/dd/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBq-Q0-6Qo">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numbe of Passengers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="39F-qi-xUK">
+                                                <rect key="frame" x="0.0" y="207.66666666666669" width="353" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YaL-GM-OTm" userLabel="ActionSV">
+                                                <rect key="frame" x="0.0" y="259.66666666666669" width="353" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-Gz-dQN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="44"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Book"/>
+                                                        <connections>
+                                                            <action selector="bookTicket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCe-bC-YYY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ks-v1-SX7">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="44"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Clear"/>
+                                                        <connections>
+                                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2N-Tj-gai"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V5B-hw-Z2E">
+                                        <rect key="frame" x="0.0" y="631.33333333333337" width="353" height="127.66666666666663"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qkn-mm-FoV" firstAttribute="height" secondItem="sEu-hQ-5B3" secondAttribute="height" multiplier="0.3" id="OQb-lX-i9q"/>
+                                    <constraint firstItem="NZQ-d1-26k" firstAttribute="height" secondItem="sEu-hQ-5B3" secondAttribute="height" multiplier="0.1" id="Qbu-7T-G19"/>
+                                    <constraint firstItem="GJK-65-PGa" firstAttribute="height" secondItem="sEu-hQ-5B3" secondAttribute="height" multiplier="0.4" id="tyk-N5-sX8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sEu-hQ-5B3" secondAttribute="trailing" constant="20" id="72b-NF-hun"/>
+                            <constraint firstItem="sEu-hQ-5B3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9g3-1b-N4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sEu-hQ-5B3" secondAttribute="bottom" id="bzi-VS-rs3"/>
+                            <constraint firstItem="sEu-hQ-5B3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r6j-xe-St5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookTicketBTN" destination="dmn-Gz-dQN" id="UUC-Nt-0iQ"/>
+                        <outlet property="cityFromTF" destination="qMF-Xv-eIr" id="ckd-Vp-QmD"/>
+                        <outlet property="cityToTF" destination="kyJ-Qp-NTP" id="72r-UL-h4J"/>
+                        <outlet property="custNameTF" destination="O97-A3-3aj" id="dCC-Rg-NK8"/>
+                        <outlet property="departureDateTF" destination="Ihe-Gz-zEF" id="YfS-O1-uqu"/>
+                        <outlet property="numPassTF" destination="39F-qi-xUK" id="e6N-pF-Unk"/>
+                        <outlet property="onewayBTN" destination="x7C-eK-qYC" id="aVv-rd-tWJ"/>
+                        <outlet property="returnDateTF" destination="NBq-Q0-6Qo" id="9dt-yB-dFQ"/>
+                        <outlet property="roundwayBTN" destination="RY0-QN-bph" id="xvt-sA-6oQ"/>
+                        <outlet property="ticketConfirmationBTN" destination="V5B-hw-Z2E" id="6Iw-I6-Egu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plane 1" width="92.333335876464844" height="60.666667938232422"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
